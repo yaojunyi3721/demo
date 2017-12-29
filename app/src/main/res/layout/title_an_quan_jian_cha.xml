@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/list_title_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        style="@style/ListTitleText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="IP地址" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="环境检查" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="文件配置" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="POOT检查" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="准入检查" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="版本合格检查" />
+
+</LinearLayout>

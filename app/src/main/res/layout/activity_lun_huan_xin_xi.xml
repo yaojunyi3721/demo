@@ -1,8 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.chinaitop.linxia.demo.activity.JianGuan.liangkudongtaiguanli.LunHuanXinXiActivity">
+    android:layout_margin="20dp"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_35"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="计划编号:" />
+
+            <TextView
+                android:id="@+id/tv_chaxun"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border" />
+
+            <Button
+                android:id="@+id/btn_chaxun"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_35"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/border2"
+                android:text="查询" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/title_lunhuanjihua"></include>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/touch_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/tv_ip"
+            style="@style/ListItemText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="IP地址" />
+
+        <TextView
+            android:id="@+id/tv_hjjc"
+            style="@style/ListItemText"
+            android:text="原有网络" />
+
+        <TextView
+            android:id="@+id/tv_wjpz"
+            style="@style/ListItemText"
+            android:text="切入网络" />
+
+        <TextView
+            android:id="@+id/tv_poot"
+            style="@style/ListItemText"
+            android:text="切换次数" />
+
+        <TextView
+            android:id="@+id/tv_zrjc"
+            style="@style/ListItemText"
+            android:text="时间" />
+
+        <TextView
+            android:id="@+id/tv_bbhejc"
+            style="@style/ListItemText"
+            android:text="" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/lines"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+
+</LinearLayout>
