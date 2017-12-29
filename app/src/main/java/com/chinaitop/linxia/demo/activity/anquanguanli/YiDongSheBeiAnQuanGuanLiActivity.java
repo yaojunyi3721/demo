@@ -66,13 +66,18 @@ public class YiDongSheBeiAnQuanGuanLiActivity extends BaseActivity {
         mContext = getApplicationContext();
 
         final List<SheBeiXinXi> list = new ArrayList<>();
-        list.add(new SheBeiXinXi("华为平板", "DEF234NF", "817236496594823737", "Android 8.0", "097463527384765", "13875647890", "Android"));
-        list.add(new SheBeiXinXi("iphone 6s", "QW1373MW1", "03897565735284956", "iOS 11", "23747458594393723617", "13875647890", "Apple"));
-        list.add(new SheBeiXinXi("iphone X", "SN873SDF", "16374586595473647693", "iOS 11", "059573626748596069", "13875647890", "Apple"));
-        list.add(new SheBeiXinXi("iPad 2", "GGH3454HADF", "034947846372847585", "iOS 10", "838374859382363475860", "13875647890", "Apple"));
-        list.add(new SheBeiXinXi("iPad mini", "GGH3454H1H", "02349873498234575324", "Android 8.0", "023948745624243", "13875647890", "Apple"));
-        list.add(new SheBeiXinXi("小米平板", "GGH3434HRTR234", "282384723482385968278304", "Android 7.0", "0585762352648", "13875647890", "Android"));
-
+//        list.add(new SheBeiXinXi("华为平板", "DEF234NF", "817236496594823737", "Android 8.0", "097463527384765", "13875647890", "Android"));
+//        list.add(new SheBeiXinXi("iphone 6s", "QW1373MW1", "03897565735284956", "iOS 11", "23747458594393723617", "13875647890", "Apple"));
+//        list.add(new SheBeiXinXi("iphone X", "SN873SDF", "16374586595473647693", "iOS 11", "059573626748596069", "13875647890", "Apple"));
+//        list.add(new SheBeiXinXi("iPad 2", "GGH3454HADF", "034947846372847585", "iOS 10", "838374859382363475860", "13875647890", "Apple"));
+//        list.add(new SheBeiXinXi("iPad mini", "GGH3454H1H", "02349873498234575324", "Android 8.0", "023948745624243", "13875647890", "Apple"));
+//        list.add(new SheBeiXinXi("小米平板", "GGH3434HRTR234", "282384723482385968278304", "Android 7.0", "0585762352648", "13875647890", "Android"));
+        list.add(new SheBeiXinXi("智能出入库终端", "DEF234NF", "817236496594823737", "Android 8.0", "097463527384765", "13875647890", "Android"));
+        list.add(new SheBeiXinXi("智能监控终端", "QW1373MW1", "03897565735284956", "Android", "23747458594393723617", "13875647890", "Android"));
+        list.add(new SheBeiXinXi("单仓档案系统终端", "SN873SDF", "16374586595473647693", "Android 8.0", "059573626748596069", "13875647890", "Android"));
+        list.add(new SheBeiXinXi("移动值仓设备", "GGH3454HADF", "034947846372847585", "Android", "838374859382363475860", "13875647890", "Android"));
+        list.add(new SheBeiXinXi("协同管理终端", "GGH3454H1H", "02349873498234575324", "Android", "023948745624243", "13875647890", "Android"));
+        list.add(new SheBeiXinXi("智能一体化终端", "GGH3434HRTR234", "282384723482385968278304", "Android", "0585762352648", "13875647890", "Android"));
         final ListViewAdapter adapter = new ListViewAdapter(mContext, list);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

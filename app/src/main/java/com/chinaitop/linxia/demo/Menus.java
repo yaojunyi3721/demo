@@ -64,7 +64,7 @@ public class Menus {
     static {
         MenuItem menuItem = new MenuItem("应急预案", R.mipmap.main1, YuAnActivity.class);
         main1.add(menuItem);
-        menuItem = new MenuItem("协同办公", R.mipmap.main2, MainActivity.class);
+        menuItem = new MenuItem("协同办公", R.mipmap.main2, Menus.class);
         main1.add(menuItem);
         menuItem = new MenuItem("库级监管", R.mipmap.main3, KuJiJianGuanActivity.class);
         main1.add(menuItem);

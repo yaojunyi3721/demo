@@ -1,5 +1,6 @@
 package com.chinaitop.linxia.demo.adapter;
 
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.chinaitop.linxia.demo.MenuItem;
+import com.chinaitop.linxia.demo.Menus;
 import com.chinaitop.linxia.demo.R;
 
 import java.util.List;
@@ -62,8 +64,18 @@ public class MenuAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 if (getItem(position).clazz!=null) {
-                    Intent intent = new Intent(mContext, getItem(position).clazz);
-                    mContext.startActivity(intent);
+//                    Intent intent = new Intent(mContext, getItem(position).clazz);
+//                    mContext.startActivity(intent);
+                    if (getItem(position).clazz == Menus.class) {
+                        ComponentName localComponentName = new ComponentName("com.seeyon.mobile.android", "com.seeyon.mobile.android.model.login.LoadActivity");
+                        Intent localIntent = new Intent();
+                        localIntent.setComponent(localComponentName);
+                        mContext.startActivity(localIntent);
+                    } else {
+                        Intent intent = new Intent(mContext, getItem(position).clazz);
+                        mContext.startActivity(intent);
+                    }
+
                 }else{
                     Toast.makeText(mContext, getItem(position).title, Toast.LENGTH_SHORT).show();
                 }

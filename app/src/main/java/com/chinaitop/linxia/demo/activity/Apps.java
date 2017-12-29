@@ -17,12 +17,12 @@ public class Apps {
 //            new AppInfo(R.mipmap.excel, "移动办公APP", 1.93, 21, AppInfo.UPDATE),
 
             new AppInfo(R.mipmap.main1, "应急预案移动应用", 1.00, 21, AppInfo.YI_DOWNLOAD),
-            new AppInfo(R.mipmap.main2, "协同办公移动应用", 3.01, 123, AppInfo.YI_DOWNLOAD),
-            new AppInfo(R.mipmap.main3, "库级监管移动应用", 1.02, 23, AppInfo.YI_DOWNLOAD),
+            new AppInfo(R.mipmap.main2, "协同办公移动应用", 3.01, 123, AppInfo.DOWNLOAD),
+            new AppInfo(R.mipmap.main3, "库级监管移动应用", 1.02, 23, AppInfo.UPDATE),
             new AppInfo(R.mipmap.main4, "价格报送移动应用", 2.51, 88, AppInfo.YI_DOWNLOAD),
             new AppInfo(R.mipmap.main5, "综合分析移动应用", 2.10, 12, AppInfo.YI_DOWNLOAD),
-            new AppInfo(R.mipmap.main6, "质量安全移动应用", 3.00, 25, AppInfo.YI_DOWNLOAD),
-            new AppInfo(R.mipmap.main7, "移动执法移动应用", 1.1, 121, AppInfo.YI_DOWNLOAD),
+            new AppInfo(R.mipmap.main6, "质量安全移动应用", 3.00, 25, AppInfo.DOWNLOAD),
+            new AppInfo(R.mipmap.main7, "移动执法移动应用", 1.1, 121, AppInfo.UPDATE),
 
     };
 
