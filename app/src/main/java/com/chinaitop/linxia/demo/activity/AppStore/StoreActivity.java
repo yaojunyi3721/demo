@@ -1,15 +1,13 @@
 package com.chinaitop.linxia.demo.activity.AppStore;
 
 import android.content.pm.ActivityInfo;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
-import android.support.design.widget.TabLayout;
 
 import com.chinaitop.linxia.demo.R;
 import com.chinaitop.linxia.demo.activity.AppStore.four.FourFragment;

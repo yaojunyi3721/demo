@@ -22,6 +22,6 @@ public class LujingList extends BaseModel{
     }
 
     public LujingList(String type) {
-        this.type=type;
+        this.modelType =type;
     }
 }

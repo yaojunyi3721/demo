@@ -1,27 +1,29 @@
 package com.chinaitop.linxia.demo.activity.AnQuan.LuJing;
 
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 import com.chinaitop.linxia.demo.R;
-import com.chinaitop.linxia.demo.activity.JianGuan.LiangQing.TemperatureFragment;
-import com.chinaitop.linxia.demo.activity.JianGuan.LiangQing.XunzhengFragment;
+import com.chinaitop.linxia.demo.activity.BaseActivity;
 
-public class LujingItemActivity extends AppCompatActivity {
+public class LujingItemActivity extends BaseActivity {
     private FragmentPagerAdapter pagerAdapter;
     private ViewPager mViewPager;
-    private TabLayout.Tab one, two, three;
+    private TabLayout.Tab one, two;
 
-    public String parentId="1";
+    public String parentId = "1";
+    private Bundle bundle;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lujing_item);
-        parentId= getIntent().getStringExtra("parentId");
+        parentId = getIntent().getStringExtra("parentId");
+        bundle = new Bundle();
+        bundle.putString("parentId", parentId);
         setTitle("粮食流通路径");
         initViews();
     }
@@ -32,15 +34,21 @@ public class LujingItemActivity extends AppCompatActivity {
         pagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
 
             private String[] mTitles = new String[]{"入库信息", "出库信息"};
+            Fragment fragment;
 
             @Override
             public Fragment getItem(int position) {
-                switch (position){
+                switch (position) {
                     case 0:
-                        return new TemperatureFragment();
+                        fragment = new LujingLeftFragment();
+                        fragment.setArguments(bundle);
+                        break;
                     default:
-                        return new XunzhengFragment();
+                        fragment = new LujingRightFragment();
+                        fragment.setArguments(bundle);
+                        break;
                 }
+                return fragment;
             }
 
             @Override
@@ -60,13 +68,11 @@ public class LujingItemActivity extends AppCompatActivity {
 
         one = mTablayout.getTabAt(0);
         two = mTablayout.getTabAt(1);
-        if (two != null) {
-            two.select();
+        if (one != null) {
+            one.select();
         }
-        three = mTablayout.getTabAt(2);
 
         one.setIcon(getResources().getDrawable(R.drawable.guanlian));
         two.setIcon(getResources().getDrawable(R.drawable.pandian));
-        three.setIcon(getResources().getDrawable(R.drawable.user));
     }
 }

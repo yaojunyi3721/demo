@@ -7,6 +7,6 @@ package com.chinaitop.linxia.demo;
 public class BaseModel {
     public static final String TYPE_TITLE = "title";
     public static final String TYPE_ITEM = "item";
-    public String type = TYPE_ITEM;
+    public String modelType = TYPE_ITEM;
 
 }
