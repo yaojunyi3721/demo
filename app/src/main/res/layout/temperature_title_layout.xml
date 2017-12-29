@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:background="@drawable/list_title_bg"
+              android:orientation="horizontal"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp">
+
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="仓房名称"/>
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="货位号"/>
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="品种"/>
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="数量"/>
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="性质"/>
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="填卡单位"/>
+
+</LinearLayout>

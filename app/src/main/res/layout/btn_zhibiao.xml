@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:divider="@drawable/line"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:showDividers="end">
+
+    <Button
+        android:id="@+id/menu1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="仓储设施库区面积" />
+
+    <Button
+        android:id="@+id/menu2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="完好仓容总仓容" />
+
+    <Button
+        android:id="@+id/menu3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="简易仓容" />
+
+    <Button
+        android:id="@+id/menu4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="危仓老库仓容" />
+
+    <Button
+        android:id="@+id/menu5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="国有企业总仓容" />
+
+    <Button
+        android:id="@+id/menu6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="非国有企业总仓容" />
+
+    <Button
+        android:id="@+id/menu7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="罩棚" />
+
+
+</LinearLayout>

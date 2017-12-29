@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.chinaitop.linxia.demo">
+
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- bugly所需权限start -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <!-- bugly所需权限end -->
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b3cbc44c6a976f1a2eccae1f0b795766"/>
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service android:name="com.amap.api.location.APSService"/>
+        <!-- 登录页 -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeLogin"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/NoActionBar"/>
+        <activity
+            android:name=".activity.YuAnActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/NoActionBar"/>
+        <activity
+            android:name=".activity.BaoSongActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.JianGuan.KuJiJianGuanActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.JianGuan.liangkudongtaiguanli.LiangKuFenBuQingKuangActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"/>
+        <activity
+            android:name=".activity.JianGuan.liangkudongtaiguanli.LiangKuCangChuQingKuangActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.JianGuan.liangkudongtaiguanli.KuCunQingKuangActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.JianGuan.liangkudongtaiguanli.ChuRuKuXinXiActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.JianGuan.liangkudongtaiguanli.LunHuanXinXiActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.JianGuan.LiangKuDongTaiGuanLiActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.JianGuan.LiangQing.LiangQingCeKongActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.JianGuan.TongJiFenXiActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.FenXi.ZongHeFenXiActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.FenXi.LiangShiShouGouShuJuActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.FenXi.ChuBeiKuQingKuangActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.FenXi.LiangShiJiaoYiQingKuangActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.ZhiFa.ZhifaActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity
+            android:name=".activity.AnQuan.AnquanActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.anquanguanli.AnQuanGuanLiPingTaiActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.anquanguanli.YiDongSheBeiXinXiGuanLiActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.anquanguanli.YiDongSheBeiAnQuanGuanLiActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.anquanguanli.YiDongNeiRongAnQuanGuanLiActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.AppStore.StoreActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.anquanguanli.YiDongJianKongActivity"/>
+        <activity android:name=".activity.AnQuan.ChuLiangJiZhiLiangXinXiActivity"/>
+        <activity android:name=".activity.yidongjieru.YiDongJieRuPingTaiActivity"/>
+        <activity android:name=".activity.yidongjieru.AnQuanJianChaActivity"/>
+        <activity android:name=".activity.yidongjieru.ZhiNengJieRuActivity"/>
+        <activity android:name=".activity.yidongjieru.CeLueGuanLiActivity"/>
+        <activity android:name=".activity.yidongjieru.JieRuGuanLiActivity"/>
+        <activity android:name=".activity.AnQuan.LuJing.LujingListActivity">
+        </activity>
+        <activity android:name=".activity.AnQuan.LuJing.LujingItemActivity">
+        </activity>
+    </application>
+
+</manifest>

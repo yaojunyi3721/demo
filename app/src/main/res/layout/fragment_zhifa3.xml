@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.chinaitop.linxia.demo.activity.ZhiFa.Zhifa3Fragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@mipmap/camera_preview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/textmPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@mipmap/camera"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="摄像头1"/>
+
+        <TextView
+            style="@style/textmPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@mipmap/camera"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="摄像头2"/>
+
+        <TextView
+            style="@style/textmPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@mipmap/camera"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="摄像头3"/>
+
+        <TextView
+            style="@style/textmPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@mipmap/camera"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="摄像头4"/>
+    </LinearLayout>
+</LinearLayout>

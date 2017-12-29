@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context="com.chinaitop.linxia.demo.activity.BaoSongActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="60dp">
+
+        <Button
+            android:id="@+id/btn_xiaomai"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_35"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border2"
+            android:text="小麦" />
+
+        <Button
+            android:id="@+id/btn_yumi"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_35"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border2"
+            android:text="玉米" />
+
+        <Button
+            android:id="@+id/btn_mianfen"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_35"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border2"
+            android:text="面粉" />
+
+        <Button
+            android:id="@+id/btn_dami"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_35"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border2"
+            android:text="大米" />
+
+        <Button
+            android:id="@+id/btn_huashengyou"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_35"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border2"
+            android:text="花生油" />
+
+        <Button
+            android:id="@+id/btn_douyou"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_35"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border2"
+            android:text="豆油" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="开始日期:" />
+
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.3"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="选择开始日期" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="结束日期:" />
+
+            <TextView
+                android:id="@+id/tv_end"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.3"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="选择结束日期" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/border2"
+                android:text="查询" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/border2"
+                android:text="清空" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/jgbs_1xiaomai" />
+
+
+</LinearLayout>
