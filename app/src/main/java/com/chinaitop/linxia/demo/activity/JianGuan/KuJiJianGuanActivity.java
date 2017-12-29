@@ -22,7 +22,7 @@ public class KuJiJianGuanActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ku_ji_jian_guan);
         ButterKnife.bind(this);
-        setTitle("库级監管");
+        setTitle("库级监管");
 
         adapter = new MenuAdapter(Menus.modulesKuJiGuanLi, this);
         moduleGridView.setAdapter(adapter);
