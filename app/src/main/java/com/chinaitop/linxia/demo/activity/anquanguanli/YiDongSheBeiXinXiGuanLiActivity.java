@@ -80,9 +80,10 @@ public class YiDongSheBeiXinXiGuanLiActivity extends BaseActivity {
                 getSystemService(CONNECTIVITY_SERVICE);
         //获取网络的状态信息，有下面三种方式
         NetworkInfo networkInfo = connectionManager.getActiveNetworkInfo();
-
-        setEditText(R.id.lianwang, networkInfo.getType() + "");
-        setEditText(R.id.lianwangname, networkInfo.getTypeName());
+        if (networkInfo != null) {
+            setEditText(R.id.lianwang, networkInfo.getType() + "");
+            setEditText(R.id.lianwangname, networkInfo.getTypeName());
+        }
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
