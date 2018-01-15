@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:background="@drawable/list_title_bg"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/tv_1"
+        style="@style/ListTitleText"
+        android:text="库点名称"/>
+
+    <TextView
+        android:id="@+id/tv_2"
+        style="@style/ListTitleText"
+        android:text="仓房名称"/>
+
+    <TextView
+        android:id="@+id/tv_3"
+        style="@style/ListTitleText"
+        android:text="品种"/>
+
+    <TextView
+        android:id="@+id/tv_4"
+        style="@style/ListTitleText"
+        android:text="作业类型"/>
+
+    <TextView
+        android:id="@+id/tv_5"
+        style="@style/ListTitleText"
+        android:text="负责人"/>
+
+    <TextView
+        android:id="@+id/tv_6"
+        style="@style/ListTitleText"
+        android:layout_weight="1.5"
+        android:text="开始时间"/>
+
+    <TextView
+        android:id="@+id/tv_7"
+        style="@style/ListTitleText"
+        android:layout_weight="1.5"
+        android:text="结束时间"/>
+    <TextView
+        android:id="@+id/tv_8"
+        style="@style/ListTitleText"
+        android:layout_weight="1.5"
+        android:text="结束时间"/>
+    <TextView
+        android:id="@+id/tv_9"
+        style="@style/ListTitleText"
+        android:layout_weight="1.5"
+        android:text="结束时间"/>
+</LinearLayout>

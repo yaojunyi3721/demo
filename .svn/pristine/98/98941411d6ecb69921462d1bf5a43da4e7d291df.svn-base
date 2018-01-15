@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/touch_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/tv_num"
+            style="@style/ListItemText"
+            android:layout_width="48dp"
+            android:layout_weight="0"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/tv_kdmc"
+            style="@style/ListItemText"
+            android:text="库点名称" />
+
+        <TextView
+            android:id="@+id/tv_cfmc"
+            style="@style/ListItemText"
+            android:text="@string/cfmc" />
+
+        <TextView
+            android:id="@+id/tv_hwh"
+            style="@style/ListItemText"
+            android:text="@string/hwh" />
+
+        <TextView
+            android:id="@+id/tv_pz"
+            style="@style/ListItemText"
+            android:text="@string/pz" />
+
+        <TextView
+            android:id="@+id/tv_clxz"
+            style="@style/ListItemText"
+            android:text="@string/clxz" />
+
+        <TextView
+            android:id="@+id/tv_dj"
+            style="@style/ListItemText"
+            android:text="@string/dj" />
+
+        <TextView
+            android:id="@+id/tv_shijsl"
+            style="@style/ListItemText"
+            android:text="@string/shijsl" />
+
+        <TextView
+            android:id="@+id/tv_rcrq"
+            style="@style/ListItemText"
+            android:text="@string/rcrq" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/lines"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:background="@drawable/list_title_bg"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/tv_1"
+        style="@style/ListTitleText"
+        android:text="地区"/>
+
+    <TextView
+        android:id="@+id/tv_2"
+        style="@style/ListTitleText"
+        android:text="已执行案件"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        style="@style/ListTitleText"
+        android:text="未执行案件"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        style="@style/ListTitleText"
+        android:text="所占百分比"/>
+
+
+</LinearLayout>

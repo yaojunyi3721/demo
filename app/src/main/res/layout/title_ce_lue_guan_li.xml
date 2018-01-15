@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/list_title_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <TextView
+        style="@style/ListTitleText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="IP地址" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="接入群体" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="接入时间段" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="端口号" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="是否开放" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="备注" />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/touch_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/tv_num"
+            style="@style/ListItemText"
+            android:text="计划编号" />
+
+        <TextView
+            android:id="@+id/tv_kdmc"
+            style="@style/ListItemText"
+            android:text="单位代码" />
+
+        <TextView
+            android:id="@+id/tv_cfmc"
+            style="@style/ListItemText"
+            android:text="单位名称" />
+
+        <TextView
+            android:id="@+id/tv_hwh"
+            style="@style/ListItemText"
+            android:text="组织机构代码" />
+
+        <TextView
+            android:id="@+id/tv_pz"
+            style="@style/ListItemText"
+            android:text="行政区划编码" />
+
+        <TextView
+            android:id="@+id/tv_clxz"
+            style="@style/ListItemText"
+            android:text="单位类型" />
+
+        <TextView
+            android:id="@+id/tv_dj"
+            style="@style/ListItemText"
+            android:text="单位性质" />
+
+        <TextView
+            android:visibility="gone"
+
+            android:id="@+id/tv_shijsl"
+            style="@style/ListItemText"
+            android:text="单位主要业务" />
+
+        <TextView
+            android:id="@+id/tv_rcrq"
+            style="@style/ListItemText"
+            android:visibility="gone"
+            android:text="备注" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/lines"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_theme_default"
+        android:title="默认主题"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_theme_dark"
+        android:title="深色主题"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_quit"
+        android:title="退出登录"
+        app:showAsAction="never"/>
+</menu>

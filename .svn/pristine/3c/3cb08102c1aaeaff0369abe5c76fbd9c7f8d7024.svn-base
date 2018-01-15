@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_35"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="连接管理:" />
+
+            <TextView
+                android:id="@+id/tv_kudian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border" />
+
+            <Button
+                android:id="@+id/btn_huangjingjiancha"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_35"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/border2"
+                android:text="选择" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_35"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="设备管理:" />
+
+            <TextView
+                android:id="@+id/tv_pinzhong"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border" />
+
+            <Button
+                android:id="@+id/btn_wenjianpeizhi"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_35"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/border2"
+                android:text="选择" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_35"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="网络用量:" />
+
+            <TextView
+                android:id="@+id/tv_xingzhi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border" />
+
+            <Button
+                android:id="@+id/btn_zhunrujiancha"
+
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_35"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/border2"
+                android:text="选择" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_35"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="资源管理:" />
+
+            <TextView
+                android:id="@+id/tv_dengji"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/border" />
+
+            <Button
+                android:id="@+id/btn_banben"
+
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height_35"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/border2"
+                android:text="选择" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/title_jieruguanli"></include>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

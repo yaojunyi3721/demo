@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:background="@drawable/list_title_bg"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/tv_kdmc"
+        style="@style/ListTitleText"
+        android:text="库点名称"/>
+
+    <TextView
+        android:id="@+id/tv_cfmc"
+        style="@style/ListTitleText"
+        android:text="仓房名称"/>
+
+    <TextView
+        android:id="@+id/tv_pz"
+        style="@style/ListTitleText"
+        android:text="品种"/>
+
+    <TextView
+        android:id="@+id/tv_zylx"
+        style="@style/ListTitleText"
+        android:text="作业类型"/>
+
+    <TextView
+        android:id="@+id/tv_fzr"
+        style="@style/ListTitleText"
+        android:text="负责人"/>
+
+    <TextView
+        android:id="@+id/tv_ksrq"
+        style="@style/ListTitleText"
+        android:layout_weight="1.5"
+        android:text="开始时间"/>
+
+    <TextView
+        android:id="@+id/tv_jsrq"
+        style="@style/ListTitleText"
+        android:layout_weight="1.5"
+        android:text="结束时间"/>
+</LinearLayout>

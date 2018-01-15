@@ -7,7 +7,9 @@ static def getVersionName() {
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.2"
-
+    lintOptions {
+        abortOnError false
+    }
     defaultConfig {
         applicationId "com.chinaitop.linxia.demo"
         minSdkVersion 19
@@ -99,5 +101,6 @@ dependencies {
     // skin-support-cardview CardView support [selectable]
     compile 'skin.support:skin-support-constraint-layout:2.2.3'
     // skin-support-constraint-layout ConstraintLayout support [selectable]
-    implementation project(':MPChartLib')
+//    implementation project(':MPChartLib')
+    compile 'yaojunyi3721.library.MPChartLib:MPChartLib:1.0.0'
 }

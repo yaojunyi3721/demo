@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:divider="@drawable/line"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:showDividers="end">
+
+    <Button
+        android:id="@+id/menu11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="全省" />
+
+    <Button
+        android:id="@+id/menu12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="石家庄市" />
+
+    <Button
+        android:id="@+id/menu13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="邢台市" />
+
+    <Button
+        android:id="@+id/menu14"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="邯郸市" />
+
+    <Button
+        android:id="@+id/menu15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="保定市" />
+
+    <Button
+        android:id="@+id/menu16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="沧州市" />
+
+    <Button
+        android:id="@+id/menu17"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="张家口市" />
+
+
+    <Button
+        android:id="@+id/menu18"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="承德市" />
+
+    <Button
+        android:id="@+id/menu19"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="唐山市" />
+
+    <Button
+        android:id="@+id/menu20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="秦皇岛市" />
+
+    <Button
+        android:id="@+id/menu21"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="廊坊市" />
+
+    <Button
+        android:id="@+id/menu22"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text="衡水" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/list_title_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        style="@style/ListTitleText"
+        android:layout_width="48dp"
+        android:layout_weight="0"
+        android:text="@string/Num" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="库点名称" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="@string/cfmc" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="@string/hwh" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="@string/pz" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="@string/clxz" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="@string/dj" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="@string/shijsl" />
+
+    <TextView
+        style="@style/ListTitleText"
+        android:text="@string/rcrq" />
+
+</LinearLayout>

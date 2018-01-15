@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/point"/>
+
+    <TextView
+        android:id="@+id/tv_company"
+        style="@style/textmPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="石家庄粮食公司"/>
+
+    <TextView
+        android:id="@+id/tv_id"
+        style="@style/textmPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="HGGHI3749827"/>
+
+    <TextView
+        android:id="@+id/tv_person"
+        style="@style/textmPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="法人:张先生"/>
+
+    <TextView
+        android:id="@+id/tv_type"
+        style="@style/textmPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="检查类型:地方储备粮"/>
+</LinearLayout>

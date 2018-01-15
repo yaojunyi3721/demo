@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/touch_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+        <TextView
+            android:id="@+id/tv_kdmc"
+            style="@style/ListItemText"
+            android:text="库点名称"/>
+
+        <TextView
+            android:id="@+id/tv_cfmc"
+            style="@style/ListItemText"
+            android:text="仓房名称"/>
+
+        <TextView
+            android:id="@+id/tv_pz"
+            style="@style/ListItemText"
+            android:text="品种"/>
+
+        <TextView
+            android:id="@+id/tv_zylx"
+            style="@style/ListItemText"
+            android:text="作业类型"/>
+
+        <TextView
+            android:id="@+id/tv_fzr"
+            style="@style/ListItemText"
+            android:text="负责人"/>
+
+        <TextView
+            android:id="@+id/tv_ksrq"
+            style="@style/ListItemText"
+            android:layout_weight="1.5"
+            android:text="开始日期"/>
+
+        <TextView
+            android:id="@+id/tv_jsrq"
+            style="@style/ListItemText"
+            android:layout_weight="1.5"
+            android:text="结束日期"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/lines"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+
+
+</LinearLayout>

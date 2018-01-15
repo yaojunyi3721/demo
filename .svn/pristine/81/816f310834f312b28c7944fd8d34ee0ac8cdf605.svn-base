@@ -1,0 +1,36 @@
+package com.chinaitop.linxia.demo.activity.JianGuan.LiangQing;
+
+import android.support.annotation.Nullable;
+import android.view.View;
+
+
+import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.chad.library.adapter.base.BaseViewHolder;
+import com.chinaitop.linxia.demo.R;
+
+import java.util.List;
+
+public class XunzhengAdapter extends BaseQuickAdapter<FumigationBean.ListBean, BaseViewHolder> {
+
+    public XunzhengAdapter(@Nullable List<FumigationBean.ListBean> data) {
+        super(R.layout.work_item_layout, data);
+    }
+
+    @Override
+    protected void convert(BaseViewHolder helper, FumigationBean.ListBean item) {
+        helper.setText(R.id.tv_kdmc,item.getCreateDepot());//库点名称
+        helper.setText(R.id.tv_cfmc,item.getHouseId());//仓房名称
+        helper.setText(R.id.tv_pz,item.getGrainKind());//品种
+        helper.setText(R.id.tv_zylx,"熏蒸");//作业类型
+        helper.setText(R.id.tv_fzr,item.getFumigationChargePerson());//负责人
+        helper.setText(R.id.tv_ksrq,item.getTaskStartTime());//开始时间
+        helper.setText(R.id.tv_jsrq,item.getTaskEndTime());//结束时间
+
+        if (helper.getLayoutPosition() == getData().size()-1)
+            helper.getView(R.id.line).setVisibility(View.GONE);
+        else
+            helper.getView(R.id.line).setVisibility(View.VISIBLE);
+
+
+    }
+}
